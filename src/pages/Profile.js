@@ -14,7 +14,7 @@ export const Profile = ({match}) => {
   }, [])
 
   if (loading) {
-    return <p className="text-center">Загрузка...</p>
+    return <div className="col-12 text-center">Загрузка...</div>
   }
 
   const {
@@ -27,8 +27,6 @@ export const Profile = ({match}) => {
 
   return (
     <Fragment>
-      <Link to="/" className="btn btn-link">На главную</Link>
-
       <div className="card mb-4">
         <div className="card-body">
           <div className="row">
@@ -38,7 +36,7 @@ export const Profile = ({match}) => {
                 alt={name}
                 style={{width: '150px'}}
               />
-              <h1>{name}</h1>
+              <h4 className="user-name">{name}</h4>
               {location && <p>Местоположение: {location}</p>}
             </div>
             <div className="col">
@@ -54,7 +52,7 @@ export const Profile = ({match}) => {
                 rel="noopener noreferrer"
                 className="btn btn-dark"
               >Открыть профиль</a>
-              <ul>
+              <ul className="user-info">
                 {login && <li>
                   <strong>Username: </strong> {login}
                 </li>}

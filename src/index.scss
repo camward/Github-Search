@@ -13,3 +13,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.badge {
+  margin-right: 5px;
+}
+.user-info {
+  margin-top: 20px;
+  padding-left: 30px;
+}
+.user-name {
+  margin: 15px auto 0;
+}
+.card-body {
+  padding: 1rem;
+
+  h5 {
+    margin: 0;
+  }
+}
